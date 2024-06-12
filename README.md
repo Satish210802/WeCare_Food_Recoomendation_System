@@ -21,8 +21,8 @@ The Food Recommendation System is an interactive platform designed to provide a 
 
 ## Technologies Used
 
-- **K-means Clustering**
-- **Random Forest**
+- **Web Developement**
+- **Machine Learning**
 
 ## Contributing
 
@@ -47,3 +47,13 @@ For any inquiries or feedback, please contact us at satishbobalade@gmail.com.
 
 
 ![image](https://github.com/Satish210802/WeCare_Food_Recoomendation_System/assets/141732350/31732c4c-dd54-46d6-ad15-80ca61f5d86e)
+
+
+
+
+## Research Publication Link
+https://ieeexplore.ieee.org/abstract/document/10426098/
+
+
+
+## Documentation
