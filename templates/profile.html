@@ -1,0 +1,85 @@
+{% extends 'basic.html' %}
+{% block body %}
+<style>
+    body {
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(135deg,rgb(119, 218, 194), rgb(26, 70, 95));
+    }
+
+    table {
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+        border-collapse: collapse;
+        width: 80vw;
+        text-align: center;
+        font-size: 20px;
+        height: auto;
+        color: #f3f3f3;
+    }
+
+    th {
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        width: auto;
+        text-align: center;
+        font-size: 20px;
+        background-color: #fa7b17;
+        padding: 20px;
+    }
+    td{
+        border: 1px solid #fa7b17;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        width: 500px;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;    }
+</style>
+
+<body>
+    <p class="h2" style="margin-top: 60px;color: #f3f3f3;font-weight: 900;font-size: 40px;">DAILY CALORIES CONSUMPTION</p>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Weight</th>
+            <th>BMI</th>
+            <th>Body Fat Percentage</th>
+            <th>Product Added</th>
+            <th>Total Calories Consumed</th>
+            <th>Selected Food For Breakfast</th>
+            <th>Selected Food For Lunch</th>
+            <th>Selected Food For Dinner</th>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div style="height:350px;"></div>
+    {% endblock %}

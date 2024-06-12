@@ -1,0 +1,88 @@
+{% extends 'basic.html' %} {% block body %}
+<style>
+        .cnt11 {
+        height: 100px;
+        .cont1chat {
+            height: 800px;
+        }
+        .ans {}
+</style>
+{%load static%}
+<div class="cnt11"></div>
+<div class="cont1chat">
+    <section>
+        <form onsubmit="/diet" method="POST">
+            {% csrf_token %}
+            <section class="p-4">
+                <div class="card" style=" border: 2px solid #fa7b17; border-radius: 5px">
+                    <div class="card-header" style="  background-color: white;   color:#fa7b17 ; text-align:center;">
+                        <h4 class="m-0">Feel free to ask us any queries like </h4>
+
+                    </div>
+                </div><br>
+                <div class="h6" style=" color: #fa7b17; margin-left: 3vw">
+                    <h6>
+                        >> What is a balanced diet?
+                    </h6>
+                    <h6>
+                        >> How many meals should I have in a day?
+                    </h6>
+                    <h6>
+                        >> Is it necessary to count calories for weight loss?
+                    </h6>
+                    <h6>
+                        >> What are some healthy alternatives to sugary snacks?
+                    </h6>
+                    <h6>
+                        >> Can I lose weight by skipping meals?
+                    </h6>
+                    <h6>
+                        >> How much water should I drink in a day?
+                    </h6>
+                    <h6>
+                        >> Should I avoid all fats in my diet?
+                    </h6>
+
+                </div><br><br>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label for="exampleFormControlInput1" class="form-label" style="color: #fa7b17; font-weight: 500;">Ask Here ...</label>
+                        <input type="text" class="form-control" style="border: 2px solid black;" name="Question" id="exampleFormControlInput1" placeholder="Could you please provide me the question you have in mind?">
+                    </div>
+                    <div style="display: flex; justify-content: center; padding-bottom: 23px; margin-top: px;">
+                        <input type="submit" value="Let's See Your answer" name="b1" class="btn345">
+                    </div>
+                </div>
+</div>
+</section>
+
+</form>
+</section>
+</div>
+<div class="ans ">
+    <section>
+        <section class="p-4 " style="margin-top: -30px; ">
+            <label for="exampleFormControlInput1 " class="form-label " style="color: #fa7b17; font-weight: 500; ">Your Solution is --> </label>
+
+            <div class="card " style="border: 2px solid black; ">
+                <div class="row ">
+                    <div class="col-md-6 mb-4 ">
+                        <label for="exampleFormControlInput1 " class="form-label ">Loading...</label>
+                        <div class="banner11 ">
+                            <div class="row1 ">
+                                {% if Question %}
+                                <h1 style="width:1300px; font-size: medium; height: auto;padding-right: 100px; margin-left:-20px; ">Your Ans is {{Question}}</h1>
+                                {% endif %}
+                                <!--                <h1 style=" ">{{bmiinfo}}</h1>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </script>
+</div>
+{%endblock%}
